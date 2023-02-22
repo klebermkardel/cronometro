@@ -21,3 +21,8 @@ function iniciarCronometro() {
 function pararCronometro() {
     clearInterval(cronometro)
 }
+
+function zerarCronometro() {
+  tempo = 0
+  document.getElementById("cronometro").innerHTML = formatarTempo(tempo);
+}
