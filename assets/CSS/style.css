@@ -10,3 +10,37 @@ body {
     font-size: 100%;
     list-style-type: none;
 }
+
+.container {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    height: 100vh; /* define a altura da div como 100% da altura da viewport */
+  }
+
+  #cronometro {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  button {
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    width: 100px;
+  }
+
+  .start {
+    background-color: #008000;
+  }
+
+  .pause {
+    color: #000;
+    background-color: #ffff00;
+  }
+
+  .reset {
+    background-color: #ff0000;
+  }
