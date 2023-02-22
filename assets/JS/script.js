@@ -10,3 +10,10 @@ function formatarTempo(tempo) {
     if (segundos < 10) segundos = "0" + segundos
     return horas + ':' + minutos + ':' + segundos
 }
+
+function iniciarCronometro() {
+    cronometro = setInterval(() => {
+        tempo++
+        document.getElementById("cronometro").innerHTML = formatarTempo(tempo)
+    }, 1000)
+}
