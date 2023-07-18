@@ -58,6 +58,7 @@ function resetTimer() {
   millisecondsEl.textContent = formatMilliseconds(milliseconds);
   pauseBtn.style.display = "none";
   startBtn.style.display = "block";
+  
 }
 
 function formatTime(time) {
