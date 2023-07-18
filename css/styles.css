@@ -62,3 +62,8 @@
 .btn:hover {
     transform: scale(1.1);
 }
+
+#startBtn {
+    background-color: #175cff;
+    color: #fff;
+}
