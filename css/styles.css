@@ -43,3 +43,22 @@
     font-size: 22.5pt;
     color: #525763;
 }
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 13.5pt;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
