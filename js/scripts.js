@@ -10,10 +10,18 @@ let interval
 let minutes = 0
 let seconds = 0
 let milliseconds = 0
-let isPauses = false;
+let isPaused = false;
 
 startBtn.addEventListener("click", startTimer)
 
 function startTime() {
-
+    interval = setInterval(() => {
+        if(!isPaused) {
+            milliseconds += 10
+            if(milliseconds === 1000) {
+                seconds++
+                milliseconds = 0
+            }
+        }
+    }, 10)
 }
