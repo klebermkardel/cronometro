@@ -18,9 +18,15 @@ function startTime() {
     interval = setInterval(() => {
         if(!isPaused) {
             milliseconds += 10
+
             if(milliseconds === 1000) {
                 seconds++
                 milliseconds = 0
+            }
+
+            if(seconds === 60) {
+                minutes++
+                seconds = 0
             }
         }
     }, 10)
