@@ -26,17 +26,17 @@ function startTimer() {
         minutes++;
         seconds = 0;
       }
-      minutesEl.textContent = minutes;
-      secondsEl.textContent = seconds;
-      millisecondsEl.textContent = milliseconds;
+      minutesEl.textContent = formatTime(minutes);
+      secondsEl.textContent = formatTime(seconds);
+      millisecondsEl.textContent = formatMilliseconds(milliseconds);
     }
   }, 10);
+}
 
-  function formatTime(time) {
+function formatTime(time) {
     return time < 10 ? `0${time}` : time
   }
 
   function formatMilliseconds(time) {
     return time < 100 ? `${time}`.padStart(3, "0") : time
   }
-}
