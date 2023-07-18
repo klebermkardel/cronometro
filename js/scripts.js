@@ -31,6 +31,9 @@ function startTimer() {
       millisecondsEl.textContent = formatMilliseconds(milliseconds);
     }
   }, 10);
+
+  startBtn.style.display = "none"
+  pauseBtn.style.display = "block"
 }
 
 function formatTime(time) {
