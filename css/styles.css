@@ -24,3 +24,22 @@
     font-weight: bold;
     color: #333;
 }
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #172953;
+    min-width: 90px;
+}
+
+.separator {
+    padding: 0 10px;
+    color: #525763;
+}
+
+#milliseconds {
+    font-size: 22.5pt;
+    color: #525763;
+}
