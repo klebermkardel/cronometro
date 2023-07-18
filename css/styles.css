@@ -67,3 +67,8 @@
     background-color: #175cff;
     color: #fff;
 }
+
+#pauseBtn,
+#resumeBtn {
+    display: none;
+}
